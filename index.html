@@ -1,16 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/lines.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
     <title>A.O.T_Library</title>
 </head>
+
 <body>
+
+    <div id="loader">
+        <div class="glow-top"></div>
+        <div class="glow-bottom"></div>
+
+        <!-- CORNER ORNAMENTS -->
+        <div class="corner corner--tl">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 76 L4 4 L76 4" stroke="#c9a84c" stroke-width="1" />
+                <path d="M4 50 L4 4 L50 4" stroke="#c9a84c" stroke-width="0.5" opacity="0.5" />
+                <circle cx="4" cy="4" r="3" fill="#c9a84c" />
+                <circle cx="4" cy="76" r="2" fill="#c9a84c" opacity="0.5" />
+                <circle cx="76" cy="4" r="2" fill="#c9a84c" opacity="0.5" />
+                <path d="M14 4 L4 14" stroke="#c9a84c" stroke-width="0.5" opacity="0.4" />
+                <path d="M24 4 L4 24" stroke="#c9a84c" stroke-width="0.3" opacity="0.3" />
+            </svg>
+        </div>
+        <div class="corner corner--tr">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 76 L4 4 L76 4" stroke="#c9a84c" stroke-width="1" />
+                <path d="M4 50 L4 4 L50 4" stroke="#c9a84c" stroke-width="0.5" opacity="0.5" />
+                <circle cx="4" cy="4" r="3" fill="#c9a84c" />
+                <circle cx="4" cy="76" r="2" fill="#c9a84c" opacity="0.5" />
+                <circle cx="76" cy="4" r="2" fill="#c9a84c" opacity="0.5" />
+            </svg>
+        </div>
+        <div class="corner corner--bl">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 76 L4 4 L76 4" stroke="#c9a84c" stroke-width="1" />
+                <path d="M4 50 L4 4 L50 4" stroke="#c9a84c" stroke-width="0.5" opacity="0.5" />
+                <circle cx="4" cy="4" r="3" fill="#c9a84c" />
+            </svg>
+        </div>
+        <div class="corner corner--br">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 76 L4 4 L76 4" stroke="#c9a84c" stroke-width="1" />
+                <path d="M4 50 L4 4 L50 4" stroke="#c9a84c" stroke-width="0.5" opacity="0.5" />
+                <circle cx="4" cy="4" r="3" fill="#c9a84c" />
+            </svg>
+        </div>
+
+        <!-- MAIN LOADER -->
+        <div id="loader">
+
+            <div class="icon-ring">
+                <div class="icon-ring__outer"></div>
+                <div class="icon-ring__inner"></div>
+                <div class="icon-ring__core">📖</div>
+            </div>
+
+            <div class="divider">
+                <div class="divider__line"></div>
+                <div class="divider__diamond"></div>
+                <div class="divider__line"></div>
+            </div>
+
+            <div class="brand">
+                <div class="brand__eyebrow">Est. 2024 &nbsp;·&nbsp; The Grand Library</div>
+                <div class="brand__title">A.O.T &nbsp;<span>&</span>&nbsp; STORE</div>
+                <div class="brand__sub">"Knowledge is the sharpest blade of all"</div>
+            </div>
+
+            <div class="divider divider--bottom">
+                <div class="divider__line"></div>
+                <div class="divider__diamond"></div>
+                <div class="divider__line"></div>
+            </div>
+
+            <div class="progress-block">
+
+                <div class="progress-meta">
+                    <span class="progress-meta__label">Loading Archives</span>
+                    <span class="progress-meta__pct" id="pct">0%</span>
+                </div>
+
+                <div class="track" id="track">
+                    <div class="track__milestones" id="milestones"></div>
+                    <div class="track__ticks" id="ticks"></div>
+                    <div class="track__bar" id="bar">
+                        <div class="track__bar-head" id="barHead"></div>
+                    </div>
+                </div>
+
+                <div class="status">
+                    <div class="status__dot"></div>
+                    <div class="status__text" id="statusText">Initializing the archive…</div>
+                </div>
+
+                <div class="sub-bars">
+                    <div class="sub-bars__row">
+                        <span class="sub-bars__label">Books</span>
+                        <div class="sub-bars__track">
+                            <div class="sub-bars__fill sub-bars__fill--gold" id="subA"></div>
+                        </div>
+                    </div>
+                    <div class="sub-bars__row">
+                        <span class="sub-bars__label">Assets</span>
+                        <div class="sub-bars__track">
+                            <div class="sub-bars__fill sub-bars__fill--crimson" id="subB"></div>
+                        </div>
+                    </div>
+                    <div class="sub-bars__row">
+                        <span class="sub-bars__label">Catalog</span>
+                        <div class="sub-bars__track">
+                            <div class="sub-bars__fill sub-bars__fill--blue" id="subC"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tagline">A.O.T &nbsp;·&nbsp; Curated Knowledge &nbsp;·&nbsp; All Rights Reserved</div>
+    </div>
+
     <nav class="w-100">
         <div class="navLogo">
             <a href="">
@@ -20,9 +138,15 @@
         </div>
         <div class="navLinks">
             <ul>
-                <li class="active"><a href="index.html"><p class="font1 m-0">Home</p></a></li>
-                <li><a href="catBooks.html"><p class="font1 m-0">Categories</p></a></li>
-                <li><a href="#"><p class="font1 m-0">Search</p></a></li>
+                <li class="active"><a href="index.html">
+                        <p class="font1 m-0">Home</p>
+                    </a></li>
+                <li><a href="catBooks.html">
+                        <p class="font1 m-0">Categories</p>
+                    </a></li>
+                <li><a href="#">
+                        <p class="font1 m-0">Search</p>
+                    </a></li>
             </ul>
         </div>
         <div class="navBtn">
@@ -47,7 +171,7 @@
     <header id="Home" class="home vh-100 ">
         <div class="container position-relative">
             <div class="row m-0">
-                <div class="col col1 col-md-6 column">
+                <div class="col col1 col-md-6 column opacity-1">
                     <div class="item w-100 h-100">
                         <div class="box w-100 h-100">
                             <div class="textCon">
@@ -58,17 +182,24 @@
                                     </div>
                                     <img src="imgs/separator.svg">
                                 </div>
-                                <p class="font1 mb-4">AOT Library provides a vast collection of books, knowledge, and resources, inspiring curiosity, learning, and enjoyment
-                                for readers of all ages</p>
+                                <p class="font1 mb-4">AOT Library provides a vast collection of books, knowledge, and
+                                    resources, inspiring curiosity, learning, and enjoyment
+                                    for readers of all ages</p>
                             </div>
                             <div class="butns">
-                                <a href="catBooks.html"><button class="btnb"><p class="font1 m-0 me-2">See More</p><img src="imgs/wired-outline-49-plus-circle-hover-swirl.gif"></button></a>
-                                <a href="contact.html"><button class="btnb"><p class="font1 m-0 me-2">Contact Us</p><img src="imgs/wired-outline-1141-email-hover-rotation.gif"></button></a>
+                                <a href="catBooks.html"><button class="btnb">
+                                        <p class="font1 m-0 me-2">See More</p><img
+                                            src="imgs/wired-outline-49-plus-circle-hover-swirl.gif">
+                                    </button></a>
+                                <a href="contact.html"><button class="btnb">
+                                        <p class="font1 m-0 me-2">Contact Us</p><img
+                                            src="imgs/wired-outline-1141-email-hover-rotation.gif">
+                                    </button></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col2 col-md-6 column">
+                <div class="col col2 col-md-6 column opacity-1">
                     <div class="item">
                         <div class="box">
                             <div class="shapes">
@@ -84,9 +215,9 @@
         </div>
     </header>
 
-    <div class="pop-up pop-up-nav"onclick="closeNav('pop-up-nav')">
-        <div class="pop-box pop-box-nav"onclick="stopClose(event)">
-            <div class="logout w-100"onclick="closeNav('pop-up-nav')">
+    <div class="pop-up pop-up-nav" onclick="closeNav('pop-up-nav')">
+        <div class="pop-box pop-box-nav" onclick="stopClose(event)">
+            <div class="logout w-100" onclick="closeNav('pop-up-nav')">
                 <button><img src="imgs/nav/logout.gif" class="img-fluid"></button>
             </div>
             <div class="title  w-100 mb-4">
@@ -169,7 +300,7 @@
                                 <p class="font1 m-0 text-uppercase">THRILLER</p>
                             </a>
                         </li>
-                
+
                         <li>
                             <a href="books.html?category=14">
                                 <p class="font1 m-0 text-uppercase">ADVENTURE</p>
@@ -184,33 +315,10 @@
         </div>
     </div>
 
-    <div id="Loading" class="loading bgImg">
-    <div class="cudeLoading">
-        <div class="loadinBorder"></div>
-        <div class="loadingImg">
-            <img src="imgs/catBooks/wired-outline-112-book-morph-open.gif">
-        </div>
-    </div>
-    <div class="text">
-        <span class="show">
-            <span class="me-3">A</span>
-            <span class="me-3">.</span>
-            <span class="me-3">O</span>
-            <span class="me-3">.</span>
-            <span class="">T</span>
-        </span>
-        <span class="dance">
-            <span class="me-3">A</span>
-            <span class="me-3">.</span>
-            <span class="me-3">O</span>
-            <span class="me-3">.</span>
-            <span class="">T</span>
-        </span>
-    </div>
-    </div>
 
-    <div class="pop-up pop-up-cart"onclick="closeNav('pop-up-cart')">
-        <div class="pop-up-box pop-up-box-cart p-4"onclick="stopClose(event)">
+
+    <div class="pop-up pop-up-cart" onclick="closeNav('pop-up-cart')">
+        <div class="pop-up-box pop-up-box-cart p-4" onclick="stopClose(event)">
             <div class="logout w-100" onclick="closeNav('pop-up-cart')">
                 <button><img src="imgs/nav/logout.gif" class="img-fluid"></button>
             </div>
@@ -222,19 +330,21 @@
                 <img src="imgs/separator.svg">
             </div>
             <div class="box w-100">
-               
-                
+
+
                 <div class="total mt-3">
                     <div class="PriseText me-3">
                         <p class="m-0 font1 text-white">Total :</p>
                     </div>
                     <div class="priseNum">
-                            <p class="font1 color1 m-0">LE<span class="text-white ms-1 me-1 fs-6">299</span><sup class="color1 font1">00</sup></p>
+                        <p class="font1 color1 m-0">LE<span class="text-white ms-1 me-1 fs-6">299</span><sup
+                                class="color1 font1">00</sup></p>
                     </div>
                 </div>
                 <div class="butns">
                     <button class="btnb mt-3">
-                        <p class="font1 m-0 me-2">Buy Now</p><img src="imgs/wired-outline-49-plus-circle-hover-swirl.gif">
+                        <p class="font1 m-0 me-2">Buy Now</p><img
+                            src="imgs/wired-outline-49-plus-circle-hover-swirl.gif">
                     </button>
                 </div>
             </div>
@@ -245,8 +355,10 @@
 
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/lenis.js"></script>
+    <script src="js/loader.js"></script>
     <script src="js/cats.js"></script>
     <script src="js/global.js"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>
