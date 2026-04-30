@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/lines.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>A.O.T_Library</title>
+</head>
+
+<body>
+    <nav class="w-100">
+        <div class="navLogo">
+            <a href="">
+                <img class="mb-1" src="imgs/spell-book.gif">
+                <h2 class="font1 mt-3 fw-bold">A.O.T & HORROR BOOKS</h2>
+            </a>
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="index.html">
+                        <p class="font1 m-0">Home</p>
+                    </a></li>
+                <li class="active"><a href="catBooks.html">
+                        <p class="font1 m-0">Categories</p>
+                    </a></li>
+                <li><a href="#">
+                        <p class="font1 m-0">Search</p>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="navBtn" onclick="openCart()">
+            <div class="user">
+                <a href=""><img src="imgs/nav/wired-outline-21-avatar-morph-group (1).png"></a>
+            </div>
+            <div class="cat" onclick="openNav('pop-up-nav')">
+                <img src="imgs/nav/skills.gif">
+            </div>
+            <div class="search">
+                <a href=""><img src="imgs/nav/wired-outline-19-magnifier-zoom-search-hover-spin.gif"></a>
+            </div>
+            <div class="cart">
+                <span>
+                    <h2 class="font1 text-white">0</h2>
+                </span>
+                <img src="imgs/nav/wired-outline-139-basket-morph-fill.gif">
+            </div>
+        </div>
+    </nav>
+
+    <header id="Horror" class="home">
+        <div class="container">
+            <div class="title mb-4">
+                <div class="titleHead">
+                    <img src="imgs/spell-book.gif">
+                    <h2 class="font1">A.O.T <span class="font2">&</span> Categories</h2>
+                </div>
+                <img src="imgs/separator.svg">
+            </div>
+            <div class="row w-100 m-0">
+
+
+            </div>
+        </div>
+    </header>
+
+    <div class="pop-up pop-up-nav" onclick="closeNav('pop-up-nav')">
+        <div class="pop-box pop-box-nav" onclick="stopClose(event)">
+            <div class="logout w-100" onclick="closeNav('pop-up-nav')">
+                <button><img src="imgs/nav/logout.gif" class="img-fluid"></button>
+            </div>
+            <div class="title  w-100 mb-4">
+                <div class="titleHead w-100">
+                    <img src="imgs/spell-book.gif">
+                    <h2 class="font1">A.O.T <span class="font2">&</span> BOOKS</h2>
+                </div>
+                <img src="imgs/separator.svg">
+            </div>
+            <div class="imgLogo mb-4">
+                <img src="imgs/nav/ChatGPT Image Nov 29, 2025, 11_54_04 AM.png" class="img-fluid">
+            </div>
+            <div class="spre w-100 mb-4">
+                <img src="imgs/separator.svg">
+            </div>
+            <div class="navLinks3 w-100">
+                <ul class="w-100">
+                    <li>
+                        <a href="index.html">
+                            <p class="font1 m-0">Home</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="catBooks.html">
+                            <p class="font1 m-0">Categories</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="font1 m-0">Search</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="spre w-100 mt-4">
+                <img src="imgs/separator.svg">
+            </div>
+            <div class="title  w-100 mb-4">
+                <div class="titleHead w-100 mb-2">
+                    <img src="imgs/spell-book.gif">
+                    <h2 class="font1">A.O.T <span class="font2">&</span> Categories</h2>
+                </div>
+                <img src="imgs/separator.svg">
+            </div>
+            <div class=" navLinks2 w-100 mb-5">
+                <ul class="w-100">
+                    <ul class="w-100">
+                        <li>
+                            <a href="books.html?category=1">
+                                <p class="font1 m-0">WAR</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="books.html?category=2">
+                                <p class="font1 m-0">HORROR</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="books.html?category=3">
+                                <p class="font1 m-0">HISTORY</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="books.html?category=4">
+                                <p class="font1 m-0 text-uppercase">Science Fiction</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="books.html?category=6">
+                                <p class="font1 m-0 text-uppercase">FANTASY</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="books.html?category=7">
+                                <p class="font1 m-0 text-uppercase">MYSTERY</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="books.html?category=8">
+                                <p class="font1 m-0 text-uppercase">THRILLER</p>
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="books.html?category=14">
+                                <p class="font1 m-0 text-uppercase">ADVENTURE</p>
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="footer w-100 text-center">
+                <h2 class="font2 color1">A.O.T & BOOKS</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="Loading" class="loading bgImg">
+        <div class="cudeLoading">
+            <div class="loadinBorder"></div>
+            <div class="loadingImg">
+                <img src="imgs/catBooks/wired-outline-112-book-morph-open.gif">
+            </div>
+        </div>
+        <div class="text">
+            <span class="show">
+                <span class="me-3">A</span>
+                <span class="me-3">.</span>
+                <span class="me-3">O</span>
+                <span class="me-3">.</span>
+                <span class="">T</span>
+            </span>
+            <span class="dance">
+                <span class="me-3">A</span>
+                <span class="me-3">.</span>
+                <span class="me-3">O</span>
+                <span class="me-3">.</span>
+                <span class="">T</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="pop-up pop-up-cart" onclick="closeNav('pop-up-cart')">
+        <div class="pop-up-box pop-up-box-cart p-4" onclick="stopClose(event)">
+            <div class="logout w-100" onclick="closeNav('pop-up-cart')">
+                <button><img src="imgs/nav/logout.gif" class="img-fluid"></button>
+            </div>
+            <div class="title  w-100">
+                <div class="titleHead w-100">
+                    <img src="imgs/nav/wired-outline-139-basket-morph-fill.gif" class="me-2">
+                    <h2 class="font1 text-white">Cart</h2>
+                </div>
+                <img src="imgs/separator.svg">
+            </div>
+            <div class="box w-100">
+
+                <div class="total mt-3">
+                    <div class="PriseText me-3">
+                        <p class="m-0 font1 text-white">Total :</p>
+                    </div>
+                    <div class="priseNum">
+                        <p class="font1 color1 m-0">LE<span class="text-white ms-1 me-1 fs-6">299</span><sup
+                                class="color1 font1">00</sup></p>
+                    </div>
+                </div>
+                <div class="butns">
+                    <button class="btnb mt-3">
+                        <p class="font1 m-0 me-2">Buy Now</p><img
+                            src="imgs/wired-outline-49-plus-circle-hover-swirl.gif">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/lenis.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/cats.js"></script>
+    <script src="js/books.js"></script>
+</body>
+
+</html>
