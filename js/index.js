@@ -31,7 +31,6 @@ links3.forEach(function (link) {
 
 window.addEventListener("load", function () {
     setTimeout(function () {
-        document.querySelector("#Loading").classList.add("unshow");
         document.querySelector("#Home").classList.add("active");
     },500)
 })
