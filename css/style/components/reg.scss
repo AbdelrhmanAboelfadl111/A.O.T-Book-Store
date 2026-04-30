@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+.nameCon{
+    position: relative;
+    img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30px;
+        @include responsive(350) {
+            display: initial!important;
+        }
+        @include responsive(650){
+            display: none!important;
+        }
+        display: none;
+    }
+    
+}
+.emailCon{
+    position: relative;
+    img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 35px;
+        cursor: pointer;
+    }
+}

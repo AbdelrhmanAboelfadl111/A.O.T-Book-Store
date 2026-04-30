@@ -1,0 +1,148 @@
+@use "../abstracts/" as *;
+#Faith,#Solider,#TopSecret,#Cabin,#RedHouse,#Dark,#Silence,#Bounty,#Warrior,#Ruler,#Hunter,#Space,#Terra,#Journe,#Red{
+    background-image: url("../imgs/bg.png");
+    background-color: black;
+    background-attachment: fixed;
+    @include flexCenter();
+    flex-direction: column;
+    .container{
+        .row{
+            .co1{
+                @include responsive(350){
+                    display: none!important;
+                }
+                @include responsive(850){
+                    display: flex!important;
+                }
+                .item{
+                    @include flexCenter();
+                    .box{
+                        width: 350px;
+                        border-radius: 15px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        position: relative;
+                       
+                    }
+                }
+            }
+            .col2{
+                .item{
+                    & >*:not(:last-child){
+                        margin-bottom: 10px;
+                    }
+                    .titleName{
+                        h2{
+                            font-size: 50px;
+                        }
+                    }
+                    .rate{
+                        @include flexCenter();
+                        flex-wrap: nowrap;
+                        justify-content: flex-start;
+                        .rateName{
+                            font-size: 20px
+                        }
+                        .rateStar{
+                            @include flexCenter();
+                            flex-wrap: nowrap;
+                            gap: 5px;
+                            img{
+                                width: 15px;
+                            }
+                        }
+                    }
+                    .prise{
+                        @include flexCenter();
+                        justify-content: flex-start;
+                        .priseText{
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                        .priseNum{
+                            @include flexCenter();
+                            flex-wrap: nowrap;
+                            span{
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    .butns {
+                        button {
+                            margin-bottom: 20px;
+                            @include flexCenter();
+
+                            @include responsive(350) {
+                                padding: 10px 18px;
+                            }
+
+                            p {
+                                width: max-content;
+                            }
+
+                            img {
+                                width: 30px;
+                            }
+                        }
+                    }
+                    .dis{
+                        p{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .slide{
+            @include flexCenter();
+            width: 100%;
+            padding: 20px;
+            overflow:hidden;
+            white-space: nowrap;
+            @include responsive(350){
+                overflow-x: auto!important;
+            }
+            .slideTrack{
+                @include flexCenter();
+                justify-content: space-evenly;
+                width: 100%!important;
+                &:hover{
+                    animation-play-state: paused;
+                }
+                a{
+                    @include flexCenter();
+                    position: relative;
+                    &:not(:last-child) {
+                        margin-right: 20px;
+                    }
+                    &:hover{
+                        .shape{
+                            opacity: 1!important;
+                        }
+                    }
+                    .shape{
+                        @include size($w:100%,$h:100%);
+                        @include flexCenter();
+                        @include Position($type: absolute, $t: 0, $l: 0);
+                        backdrop-filter: blur(5px);
+                        background-color: rgba(0, 0, 0, 0.416);
+                        opacity: 0;
+                        transition: all 0.5s;
+                        img{
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                    img {
+                        width: 200px;
+                        // height: 319.14px!important;
+                        height: 319.14px;
+                        border-radius: 15px;
+                        user-select: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1827 @@
+@charset "UTF-8";
+.font1 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.font2 {
+  font-family: "Pinyon Script", cursive;
+}
+
+.font3 {
+  font-family: "Italianno";
+}
+
+.color1 {
+  color: #e4c590;
+}
+
+.title h2 {
+  margin-bottom: 0;
+}
+.title img {
+  width: 120px;
+}
+.title .titleHead {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.title .titleHead img {
+  width: 75px;
+  margin-bottom: 6px;
+}
+
+.btnb {
+  background-color: transparent;
+  border: 2px solid #e4c590;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+.btnb p {
+  position: relative;
+}
+.btnb::before {
+  position: absolute;
+  top: 50%;
+  right: initial;
+  bottom: initial;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(228, 197, 144, 0.6117647059);
+  border: 2px solid transparent;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  transition: all 0.7s;
+}
+.btnb:hover::before {
+  border-radius: 0;
+  width: 110% !important;
+  height: 110% !important;
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  .navLinks {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  .navLinks {
+    display: initial;
+  }
+}
+.navLinks ul {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.navLinks ul li {
+  position: relative;
+}
+.navLinks ul li.active::before, .navLinks ul li.active::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid #e4c590;
+  opacity: 1;
+  position: absolute;
+  border-width: 3px;
+}
+.navLinks ul li.active::before {
+  top: 0;
+  left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+.navLinks ul li.active::after {
+  border-top: 0;
+  border-left: 0;
+  right: 0;
+  bottom: 0;
+}
+.navLinks ul li.active a p {
+  color: #e4c590;
+}
+.navLinks ul li:not(:last-child) {
+  margin-right: 20px;
+}
+.navLinks ul li {
+  padding: 10px;
+}
+.navLinks ul li a {
+  color: white;
+}
+.navLinks ul li a p {
+  font-size: 20px;
+  font-weight: 700;
+  transition-duration: 1s !important;
+}
+
+.navLinks2 {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  .navLinks2 {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  .navLinks2 {
+    display: initial;
+  }
+}
+.navLinks2 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.navLinks2 ul li {
+  position: relative;
+}
+.navLinks2 ul li.active::before, .navLinks2 ul li.active::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid #e4c590;
+  opacity: 1;
+  position: absolute;
+  border-width: 3px;
+}
+.navLinks2 ul li.active::before {
+  top: 0;
+  left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+.navLinks2 ul li.active::after {
+  border-top: 0;
+  border-left: 0;
+  right: 0;
+  bottom: 0;
+}
+.navLinks2 ul li.active a p {
+  color: #e4c590;
+}
+.navLinks2 ul li {
+  padding: 10px;
+}
+.navLinks2 ul li a {
+  color: white;
+}
+.navLinks2 ul li a p {
+  font-size: 20px;
+  font-weight: 700;
+  transition-duration: 1s !important;
+}
+
+.navLinks3 {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  .navLinks3 {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  .navLinks3 {
+    display: initial;
+  }
+}
+.navLinks3 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.navLinks3 ul li {
+  position: relative;
+}
+.navLinks3 ul li.active::before, .navLinks3 ul li.active::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid #e4c590;
+  opacity: 1;
+  position: absolute;
+  border-width: 3px;
+}
+.navLinks3 ul li.active::before {
+  top: 0;
+  left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+.navLinks3 ul li.active::after {
+  border-top: 0;
+  border-left: 0;
+  right: 0;
+  bottom: 0;
+}
+.navLinks3 ul li.active a p {
+  color: #e4c590;
+}
+.navLinks3 ul li {
+  padding: 10px;
+}
+.navLinks3 ul li a {
+  color: white;
+}
+.navLinks3 ul li a p {
+  font-size: 20px;
+  font-weight: 700;
+  transition-duration: 1s !important;
+}
+
+.spre {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+.spre img {
+  width: 120px;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+body {
+  scroll-behavior: auto !important;
+}
+
+* {
+  scroll-behavior: auto !important;
+}
+
+nav .navBtn .cart {
+  position: relative;
+}
+nav .navBtn .cart span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-40%);
+}
+nav .navBtn .cart span h2 {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: #e4c590;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0;
+  color: black !important;
+}
+
+@keyframes animiTranslate {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+@keyframes animiopacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animationRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes Swap {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#Home.active .col1, #Home.active .col2 {
+  transform: translateY(0);
+  opacity: 1;
+}
+#Home {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("../imgs/ChatGPT Image Oct 13, 2025, 12_25_21 AM.png");
+  background-position: center;
+  background-size: contain;
+  overflow: hidden;
+}
+#Home::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid transparent;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.363);
+}
+#Home .title .titleHead h2 {
+  margin-top: 10px;
+  font-size: 40px;
+}
+@media (max-width: 1300px) {
+  #Home .title .titleHead h2 {
+    font-size: 30px;
+  }
+}
+#Home .col1 {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.8s;
+}
+#Home .col2 {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.8s;
+}
+@media (max-width: 1300px) {
+  #Home .col2 {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  #Home .col2 {
+    display: initial;
+  }
+}
+#Home .col2 .box {
+  align-items: center;
+  position: relative;
+}
+#Home .col2 .box .shapes {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#Home .col2 .box .shapes img {
+  transform: translateY(-50px);
+  width: 50px;
+}
+@media (max-width: 1300px) {
+  #Home .col2 .box .shapes img {
+    width: 30px;
+  }
+}
+#Home .col2 .box .shapes img {
+  animation: animiopacity 1s infinite alternate ease-in-out;
+}
+#Home .col2 .box .shapes img.shape1 {
+  transform: translate(-120px, 150px);
+  animation-delay: 0s;
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  #Home .col2 .box .shapes img.shape1 {
+    transform: translate(-100px, 150px);
+  }
+}
+#Home .col2 .box .shapes img.shape2 {
+  transform: translateY(-30px);
+  animation-delay: 0.3s;
+}
+#Home .col2 .box .shapes img.shape3 {
+  transform: translate(120px, 150px);
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  #Home .col2 .box .shapes img.shape3 {
+    transform: translate(100px, 150px);
+  }
+}
+#Home .col2 .box .shapes img.shape3 {
+  animation-delay: 0.6s;
+}
+#Home .col2 .box img.mainImg {
+  width: 250px;
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  #Home .col2 .box img.mainImg {
+    width: 200px;
+  }
+}
+#Home .col2 .box img.mainImg {
+  animation: animiTranslate 2s infinite alternate linear;
+}
+#Home .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+#Home .box .textCon {
+  color: white;
+}
+#Home .box .textCon p {
+  color: rgb(199, 199, 199);
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  #Home .box .textCon p {
+    font-size: 15px;
+  }
+}
+#Home .members {
+  position: absolute;
+  top: initial;
+  right: 0px;
+  bottom: 20px;
+  left: initial;
+  cursor: pointer;
+  border: 2px solid #e4c590;
+  border-radius: 10px 0px 0px 10px;
+  border-right: 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translateX(190px);
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.603);
+  transition: all 0.6s;
+}
+@media (max-width: 1300px) {
+  #Home .members {
+    transform: translateX(147px);
+  }
+}
+@media (min-width: 371px) and (max-width: 1300px) {
+  #Home .members {
+    transform: translateX(155px);
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  #Home .members {
+    transform: translateX(165px);
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  #Home .members {
+    transform: translateX(175px);
+  }
+}
+#Home .members:hover {
+  transform: translateX(0);
+}
+#Home .members .box {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+#Home .members .box img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+#Home .members .box h2 {
+  margin: 0;
+  color: white;
+}
+#Home .butns {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+#Home .butns button {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  #Home .butns button {
+    padding: 10px 18px;
+  }
+}
+#Home .butns button p {
+  width: max-content;
+}
+#Home .butns button img {
+  width: 30px;
+}
+
+nav {
+  padding: 5px 40px;
+  opacity: 1 !important;
+  z-index: 10000;
+}
+@media (max-width: 1300px) {
+  nav {
+    padding: 5px 5px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  nav {
+    padding: 5px 20px;
+  }
+}
+nav {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  background: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  justify-content: space-between;
+  transition: all 1s !important;
+}
+nav .navLogo a {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+nav .navLogo a img {
+  width: 60px;
+}
+nav .navLogo a h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+}
+@media (max-width: 1300px) {
+  nav .navLogo a h2 {
+    font-size: 17px;
+  }
+}
+nav .navBtn {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+nav .navBtn img {
+  width: 40px;
+  cursor: pointer;
+}
+@media (max-width: 1300px) {
+  nav .navBtn img {
+    width: 35px;
+  }
+}
+
+nav.noShow {
+  transform: translateY(-100%);
+}
+
+.pop-up-nav {
+  position: fixed;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pop-up-nav.show {
+  opacity: 1;
+  z-index: 10000;
+}
+.pop-up-nav.show .pop-box-nav {
+  transform: translateX(0);
+  opacity: 1;
+}
+.pop-up-nav::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+.pop-up-nav {
+  opacity: 0;
+  z-index: -1;
+  transition-duration: 1s;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.603);
+  overflow: auto !important;
+}
+.pop-up-nav .pop-box-nav {
+  position: absolute;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  background-color: rgb(22, 22, 22);
+  background-image: url("../imgs/bg.png");
+  padding: 50px 5px;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s 0.5s;
+}
+.pop-up-nav .pop-box-nav .logout {
+  position: absolute;
+  top: 10px;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+.pop-up-nav .pop-box-nav .logout button {
+  width: 70px;
+  background-color: transparent;
+  border: 0;
+}
+.pop-up-nav .pop-box-nav .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-nav .pop-box-nav .title .titleHead {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-nav .pop-box-nav .title .titleHead h2 {
+  margin-top: 0.6rem;
+  color: white;
+}
+.pop-up-nav .pop-box-nav .imgLogo {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 2px dotted #e4c590;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.603);
+}
+@media (max-width: 1300px) {
+  .pop-up-nav .pop-box-nav .navLinks {
+    display: flex !important;
+  }
+}
+.pop-up-nav .pop-box-nav .navLinks ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-nav .pop-box-nav .navLinks ul li {
+  margin: 0;
+}
+.pop-up-nav .pop-box-nav .navLinks ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+@media (max-width: 1300px) {
+  .pop-up-nav .pop-box-nav .navLinks2 {
+    display: flex !important;
+  }
+}
+.pop-up-nav .pop-box-nav .navLinks2 ul li {
+  margin-bottom: 0 !important;
+}
+.pop-up-nav .pop-box-nav .navLinks2 ul li:first-child {
+  border-block: 0 !important;
+}
+.pop-up-nav .pop-box-nav .navLinks2 ul li {
+  width: 70%;
+  text-align: center;
+}
+.pop-up-nav .pop-box-nav .navLinks2 ul li::after, .pop-up-nav .pop-box-nav .navLinks2 ul li::before {
+  display: none;
+}
+.pop-up-nav .pop-box-nav .navLinks2 ul li {
+  border-block: 2px dashed #e4c590;
+}
+@media (max-width: 1300px) {
+  .pop-up-nav .pop-box-nav .navLinks3 {
+    display: flex !important;
+  }
+}
+
+#BooksCat.active .column, #War.active .column, #Horror.active .column, #History.active .column, #Since.active .column {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+#BooksCat, #War, #Horror, #History, #Since {
+  background-image: url("../imgs/bg.png");
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+#BooksCat .container .title, #War .container .title, #Horror .container .title, #History .container .title, #Since .container .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#BooksCat .container .title .titleHead, #War .container .title .titleHead, #Horror .container .title .titleHead, #History .container .title .titleHead, #Since .container .title .titleHead {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#BooksCat .container .row .column, #War .container .row .column, #Horror .container .row .column, #History .container .row .column, #Since .container .row .column {
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+  margin: auto;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 1s;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+#BooksCat .container .row .column .item, #War .container .row .column .item, #Horror .container .row .column .item, #History .container .row .column .item, #Since .container .row .column .item {
+  width: 100%;
+  height: 100%;
+}
+#BooksCat .container .row .column .item .box:hover .shape, #War .container .row .column .item .box:hover .shape, #Horror .container .row .column .item .box:hover .shape, #History .container .row .column .item .box:hover .shape, #Since .container .row .column .item .box:hover .shape {
+  opacity: 1 !important;
+}
+#BooksCat .container .row .column .item .box:hover .bodyText, #War .container .row .column .item .box:hover .bodyText, #Horror .container .row .column .item .box:hover .bodyText, #History .container .row .column .item .box:hover .bodyText, #Since .container .row .column .item .box:hover .bodyText {
+  padding-block: 20px;
+}
+#BooksCat .container .row .column .item .box.box2, #War .container .row .column .item .box.box2, #Horror .container .row .column .item .box.box2, #History .container .row .column .item .box.box2, #Since .container .row .column .item .box.box2 {
+  background-image: url("../imgs/catBooks/war-zone-landscape-with-apocalyptic-destruction.jpg");
+}
+#BooksCat .container .row .column .item .box.box3, #War .container .row .column .item .box.box3, #Horror .container .row .column .item .box.box3, #History .container .row .column .item .box.box3, #Since .container .row .column .item .box.box3 {
+  background-image: url("../imgs/catBooks/egyptian-hieroglyphs-wall.jpg");
+}
+#BooksCat .container .row .column .item .box.box4, #War .container .row .column .item .box.box4, #Horror .container .row .column .item .box.box4, #History .container .row .column .item .box.box4, #Since .container .row .column .item .box.box4 {
+  background-image: url("../imgs/catBooks/3704171.jpg");
+}
+#BooksCat .container .row .column .item .box, #War .container .row .column .item .box, #Horror .container .row .column .item .box, #History .container .row .column .item .box, #Since .container .row .column .item .box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/catBooks/halloween-wallpaper-with-zombie-hand.jpg");
+  overflow: hidden;
+  border-radius: 15px;
+}
+#BooksCat .container .row .column .item .box::before, #War .container .row .column .item .box::before, #Horror .container .row .column .item .box::before, #History .container .row .column .item .box::before, #Since .container .row .column .item .box::before {
+  content: "";
+  display: block;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8941176471) 10%, transparent 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: initial;
+  right: initial;
+  bottom: 0;
+  left: 0;
+}
+#BooksCat .container .row .column .item .box .shape, #War .container .row .column .item .box .shape, #Horror .container .row .column .item .box .shape, #History .container .row .column .item .box .shape, #Since .container .row .column .item .box .shape {
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.326);
+  opacity: 0;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: initial;
+  right: initial;
+  bottom: 0;
+  left: 0;
+}
+#BooksCat .container .row .column .item .box .shape img, #War .container .row .column .item .box .shape img, #Horror .container .row .column .item .box .shape img, #History .container .row .column .item .box .shape img, #Since .container .row .column .item .box .shape img {
+  width: 70px;
+}
+#BooksCat .container .row .column .item .box .bodyText, #War .container .row .column .item .box .bodyText, #Horror .container .row .column .item .box .bodyText, #History .container .row .column .item .box .bodyText, #Since .container .row .column .item .box .bodyText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: initial;
+  right: initial;
+  bottom: 0px;
+  left: 0;
+  background-color: black;
+  transition: all 0.5s !important;
+  padding: 10px;
+}
+#BooksCat .container .row .column .item .box .bodyText h2, #War .container .row .column .item .box .bodyText h2, #Horror .container .row .column .item .box .bodyText h2, #History .container .row .column .item .box .bodyText h2, #Since .container .row .column .item .box .bodyText h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+div.loading {
+  position: fixed;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  z-index: 20000;
+  transition: all 2s;
+  background-image: url("../imgs/bg.png");
+  background-color: black;
+}
+div.loading .cudeLoading {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+div.loading .cudeLoading .loadinBorder {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  border-top-color: #e4c590;
+  animation: animationRotate 1s infinite linear;
+  position: relative;
+}
+div.loading .cudeLoading .loadingImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+div.loading .cudeLoading .loadingImg img {
+  width: 100%;
+}
+div.loading .text {
+  width: 100%;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+div.loading .text .show {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+div.loading .text .show span {
+  font-size: 90px;
+}
+@media (max-width: 1300px) {
+  div.loading .text .show span {
+    font-size: 80px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  div.loading .text .show span {
+    font-size: 90px;
+  }
+}
+div.loading .text .show span {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+div.loading .text .dance {
+  position: absolute;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+div.loading .text .dance span:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+div.loading .text .dance span:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+div.loading .text .dance span:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+div.loading .text .dance span:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+div.loading .text .dance span:nth-of-type(5) {
+  animation-delay: 1s;
+}
+div.loading .text .dance span:nth-of-type(6) {
+  animation-delay: 1.2s;
+}
+div.loading .text .dance span {
+  color: white;
+  font-size: 90px;
+}
+@media (max-width: 1300px) {
+  div.loading .text .dance span {
+    font-size: 80px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  div.loading .text .dance span {
+    font-size: 90px;
+  }
+}
+div.loading .text .dance span {
+  animation: Swap 1s infinite alternate-reverse;
+}
+
+div.loading.unshow {
+  opacity: 0;
+  z-index: -1;
+}
+
+#War .container .row .column {
+  height: 520px !important;
+  width: 350px !important;
+}
+#War .box1 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/war/Black White Simple Real Soldier Wattpad Book Cover.png") !important;
+}
+#War .box2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/war/Brown Bold Action Movie Flyer.png") !important;
+}
+#War .box3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/war/Brown Rusty Mystery Novel Book Cover .png") !important;
+}
+#War .box4 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/war/Green & Red Simple Mystery Thriller Story Book Cover.png") !important;
+}
+#War .bodyText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start !important;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.445) !important;
+}
+#War .bodyText p {
+  color: white;
+}
+#War .bodyText span.priseUnit {
+  color: #e4c590;
+}
+
+#Horror .container .row .column {
+  height: 520px !important;
+  width: 350px !important;
+}
+#Horror .box1 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/Horror/Black Thriller Ebook Cover Document.png") !important;
+}
+#Horror .box2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/Horror/Red and Black Photo The Red House Book Cover .png") !important;
+}
+#Horror .box3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/Horror/Red Black Illustrated Haunted Manor Horror Novel Book Cover.png") !important;
+}
+#Horror .box4 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/Horror/Teal and Black The Silence Wattpad Book Cover.png") !important;
+}
+#Horror .bodyText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start !important;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.445) !important;
+}
+#Horror .bodyText p {
+  color: white;
+}
+#Horror .bodyText span.priseUnit {
+  color: #e4c590;
+}
+
+#History .container .row .column {
+  height: 520px !important;
+  width: 350px !important;
+}
+#History .box1 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/history/Beige and Brown Rusty Vintage Style Mystery Novel Book Cover .png") !important;
+}
+#History .box2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/history/Brown And Black Rusty Mystery Novel Book Cover.png") !important;
+}
+#History .box3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/history/Brown Rusty Mystery Novel Book Cover.png") !important;
+}
+#History .box4 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/history/Brown Vintage Style Mystery Novel Book Cover.png") !important;
+}
+#History .bodyText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start !important;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.445) !important;
+}
+#History .bodyText p {
+  color: white;
+}
+#History .bodyText span.priseUnit {
+  color: #e4c590;
+}
+
+#Since .container .row .column {
+  height: 520px !important;
+  width: 350px !important;
+}
+#Since .box1 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/ScienceFiction/Astronaut Floating in Space Science Fiction Book Cover.png   ") !important;
+}
+#Since .box2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/ScienceFiction/Blue and White Cartoon Illustrative Novel Story Book Cover.png") !important;
+}
+#Since .box3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/ScienceFiction/Purple and White Modern Journey Wattpad Book Cover.png") !important;
+}
+#Since .box4 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/ScienceFiction/Red and White Minimalist Warrior Book Wattpad Book Cover.png") !important;
+}
+#Since .bodyText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start !important;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.445) !important;
+}
+#Since .bodyText p {
+  color: white;
+}
+#Since .bodyText span.priseUnit {
+  color: #e4c590;
+}
+
+#Faith, #Solider, #TopSecret, #Cabin, #RedHouse, #Dark, #Silence, #Bounty, #Warrior, #Ruler, #Hunter, #Space, #Terra, #Journe, #Red {
+  background-image: url("../imgs/bg.png");
+  background-color: black;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 1300px) {
+  #Faith .container .row .co1, #Solider .container .row .co1, #TopSecret .container .row .co1, #Cabin .container .row .co1, #RedHouse .container .row .co1, #Dark .container .row .co1, #Silence .container .row .co1, #Bounty .container .row .co1, #Warrior .container .row .co1, #Ruler .container .row .co1, #Hunter .container .row .co1, #Space .container .row .co1, #Terra .container .row .co1, #Journe .container .row .co1, #Red .container .row .co1 {
+    display: none !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  #Faith .container .row .co1, #Solider .container .row .co1, #TopSecret .container .row .co1, #Cabin .container .row .co1, #RedHouse .container .row .co1, #Dark .container .row .co1, #Silence .container .row .co1, #Bounty .container .row .co1, #Warrior .container .row .co1, #Ruler .container .row .co1, #Hunter .container .row .co1, #Space .container .row .co1, #Terra .container .row .co1, #Journe .container .row .co1, #Red .container .row .co1 {
+    display: flex !important;
+  }
+}
+#Faith .container .row .co1 .item, #Solider .container .row .co1 .item, #TopSecret .container .row .co1 .item, #Cabin .container .row .co1 .item, #RedHouse .container .row .co1 .item, #Dark .container .row .co1 .item, #Silence .container .row .co1 .item, #Bounty .container .row .co1 .item, #Warrior .container .row .co1 .item, #Ruler .container .row .co1 .item, #Hunter .container .row .co1 .item, #Space .container .row .co1 .item, #Terra .container .row .co1 .item, #Journe .container .row .co1 .item, #Red .container .row .co1 .item {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+#Faith .container .row .co1 .item .box, #Solider .container .row .co1 .item .box, #TopSecret .container .row .co1 .item .box, #Cabin .container .row .co1 .item .box, #RedHouse .container .row .co1 .item .box, #Dark .container .row .co1 .item .box, #Silence .container .row .co1 .item .box, #Bounty .container .row .co1 .item .box, #Warrior .container .row .co1 .item .box, #Ruler .container .row .co1 .item .box, #Hunter .container .row .co1 .item .box, #Space .container .row .co1 .item .box, #Terra .container .row .co1 .item .box, #Journe .container .row .co1 .item .box, #Red .container .row .co1 .item .box {
+  width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+#Faith .container .row .co1 .item .box:hover::before, #Solider .container .row .co1 .item .box:hover::before, #TopSecret .container .row .co1 .item .box:hover::before, #Cabin .container .row .co1 .item .box:hover::before, #RedHouse .container .row .co1 .item .box:hover::before, #Dark .container .row .co1 .item .box:hover::before, #Silence .container .row .co1 .item .box:hover::before, #Bounty .container .row .co1 .item .box:hover::before, #Warrior .container .row .co1 .item .box:hover::before, #Ruler .container .row .co1 .item .box:hover::before, #Hunter .container .row .co1 .item .box:hover::before, #Space .container .row .co1 .item .box:hover::before, #Terra .container .row .co1 .item .box:hover::before, #Journe .container .row .co1 .item .box:hover::before, #Red .container .row .co1 .item .box:hover::before {
+  opacity: 1;
+}
+#Faith .container .row .co1 .item .box::before, #Solider .container .row .co1 .item .box::before, #TopSecret .container .row .co1 .item .box::before, #Cabin .container .row .co1 .item .box::before, #RedHouse .container .row .co1 .item .box::before, #Dark .container .row .co1 .item .box::before, #Silence .container .row .co1 .item .box::before, #Bounty .container .row .co1 .item .box::before, #Warrior .container .row .co1 .item .box::before, #Ruler .container .row .co1 .item .box::before, #Hunter .container .row .co1 .item .box::before, #Space .container .row .co1 .item .box::before, #Terra .container .row .co1 .item .box::before, #Journe .container .row .co1 .item .box::before, #Red .container .row .co1 .item .box::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.326);
+  opacity: 0;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: initial;
+  right: initial;
+  bottom: 0;
+  left: 0;
+}
+#Faith .container .row .col2 .item > *:not(:last-child), #Solider .container .row .col2 .item > *:not(:last-child), #TopSecret .container .row .col2 .item > *:not(:last-child), #Cabin .container .row .col2 .item > *:not(:last-child), #RedHouse .container .row .col2 .item > *:not(:last-child), #Dark .container .row .col2 .item > *:not(:last-child), #Silence .container .row .col2 .item > *:not(:last-child), #Bounty .container .row .col2 .item > *:not(:last-child), #Warrior .container .row .col2 .item > *:not(:last-child), #Ruler .container .row .col2 .item > *:not(:last-child), #Hunter .container .row .col2 .item > *:not(:last-child), #Space .container .row .col2 .item > *:not(:last-child), #Terra .container .row .col2 .item > *:not(:last-child), #Journe .container .row .col2 .item > *:not(:last-child), #Red .container .row .col2 .item > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+#Faith .container .row .col2 .item .titleName h2, #Solider .container .row .col2 .item .titleName h2, #TopSecret .container .row .col2 .item .titleName h2, #Cabin .container .row .col2 .item .titleName h2, #RedHouse .container .row .col2 .item .titleName h2, #Dark .container .row .col2 .item .titleName h2, #Silence .container .row .col2 .item .titleName h2, #Bounty .container .row .col2 .item .titleName h2, #Warrior .container .row .col2 .item .titleName h2, #Ruler .container .row .col2 .item .titleName h2, #Hunter .container .row .col2 .item .titleName h2, #Space .container .row .col2 .item .titleName h2, #Terra .container .row .col2 .item .titleName h2, #Journe .container .row .col2 .item .titleName h2, #Red .container .row .col2 .item .titleName h2 {
+  font-size: 50px;
+}
+#Faith .container .row .col2 .item .rate, #Solider .container .row .col2 .item .rate, #TopSecret .container .row .col2 .item .rate, #Cabin .container .row .col2 .item .rate, #RedHouse .container .row .col2 .item .rate, #Dark .container .row .col2 .item .rate, #Silence .container .row .col2 .item .rate, #Bounty .container .row .col2 .item .rate, #Warrior .container .row .col2 .item .rate, #Ruler .container .row .col2 .item .rate, #Hunter .container .row .col2 .item .rate, #Space .container .row .col2 .item .rate, #Terra .container .row .col2 .item .rate, #Journe .container .row .col2 .item .rate, #Red .container .row .col2 .item .rate {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+#Faith .container .row .col2 .item .rate .rateName, #Solider .container .row .col2 .item .rate .rateName, #TopSecret .container .row .col2 .item .rate .rateName, #Cabin .container .row .col2 .item .rate .rateName, #RedHouse .container .row .col2 .item .rate .rateName, #Dark .container .row .col2 .item .rate .rateName, #Silence .container .row .col2 .item .rate .rateName, #Bounty .container .row .col2 .item .rate .rateName, #Warrior .container .row .col2 .item .rate .rateName, #Ruler .container .row .col2 .item .rate .rateName, #Hunter .container .row .col2 .item .rate .rateName, #Space .container .row .col2 .item .rate .rateName, #Terra .container .row .col2 .item .rate .rateName, #Journe .container .row .col2 .item .rate .rateName, #Red .container .row .col2 .item .rate .rateName {
+  font-size: 20px;
+}
+#Faith .container .row .col2 .item .rate .rateStar, #Solider .container .row .col2 .item .rate .rateStar, #TopSecret .container .row .col2 .item .rate .rateStar, #Cabin .container .row .col2 .item .rate .rateStar, #RedHouse .container .row .col2 .item .rate .rateStar, #Dark .container .row .col2 .item .rate .rateStar, #Silence .container .row .col2 .item .rate .rateStar, #Bounty .container .row .col2 .item .rate .rateStar, #Warrior .container .row .col2 .item .rate .rateStar, #Ruler .container .row .col2 .item .rate .rateStar, #Hunter .container .row .col2 .item .rate .rateStar, #Space .container .row .col2 .item .rate .rateStar, #Terra .container .row .col2 .item .rate .rateStar, #Journe .container .row .col2 .item .rate .rateStar, #Red .container .row .col2 .item .rate .rateStar {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+#Faith .container .row .col2 .item .rate .rateStar img, #Solider .container .row .col2 .item .rate .rateStar img, #TopSecret .container .row .col2 .item .rate .rateStar img, #Cabin .container .row .col2 .item .rate .rateStar img, #RedHouse .container .row .col2 .item .rate .rateStar img, #Dark .container .row .col2 .item .rate .rateStar img, #Silence .container .row .col2 .item .rate .rateStar img, #Bounty .container .row .col2 .item .rate .rateStar img, #Warrior .container .row .col2 .item .rate .rateStar img, #Ruler .container .row .col2 .item .rate .rateStar img, #Hunter .container .row .col2 .item .rate .rateStar img, #Space .container .row .col2 .item .rate .rateStar img, #Terra .container .row .col2 .item .rate .rateStar img, #Journe .container .row .col2 .item .rate .rateStar img, #Red .container .row .col2 .item .rate .rateStar img {
+  width: 15px;
+}
+#Faith .container .row .col2 .item .prise, #Solider .container .row .col2 .item .prise, #TopSecret .container .row .col2 .item .prise, #Cabin .container .row .col2 .item .prise, #RedHouse .container .row .col2 .item .prise, #Dark .container .row .col2 .item .prise, #Silence .container .row .col2 .item .prise, #Bounty .container .row .col2 .item .prise, #Warrior .container .row .col2 .item .prise, #Ruler .container .row .col2 .item .prise, #Hunter .container .row .col2 .item .prise, #Space .container .row .col2 .item .prise, #Terra .container .row .col2 .item .prise, #Journe .container .row .col2 .item .prise, #Red .container .row .col2 .item .prise {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+#Faith .container .row .col2 .item .prise .priseText p, #Solider .container .row .col2 .item .prise .priseText p, #TopSecret .container .row .col2 .item .prise .priseText p, #Cabin .container .row .col2 .item .prise .priseText p, #RedHouse .container .row .col2 .item .prise .priseText p, #Dark .container .row .col2 .item .prise .priseText p, #Silence .container .row .col2 .item .prise .priseText p, #Bounty .container .row .col2 .item .prise .priseText p, #Warrior .container .row .col2 .item .prise .priseText p, #Ruler .container .row .col2 .item .prise .priseText p, #Hunter .container .row .col2 .item .prise .priseText p, #Space .container .row .col2 .item .prise .priseText p, #Terra .container .row .col2 .item .prise .priseText p, #Journe .container .row .col2 .item .prise .priseText p, #Red .container .row .col2 .item .prise .priseText p {
+  font-size: 20px;
+}
+#Faith .container .row .col2 .item .prise .priseNum, #Solider .container .row .col2 .item .prise .priseNum, #TopSecret .container .row .col2 .item .prise .priseNum, #Cabin .container .row .col2 .item .prise .priseNum, #RedHouse .container .row .col2 .item .prise .priseNum, #Dark .container .row .col2 .item .prise .priseNum, #Silence .container .row .col2 .item .prise .priseNum, #Bounty .container .row .col2 .item .prise .priseNum, #Warrior .container .row .col2 .item .prise .priseNum, #Ruler .container .row .col2 .item .prise .priseNum, #Hunter .container .row .col2 .item .prise .priseNum, #Space .container .row .col2 .item .prise .priseNum, #Terra .container .row .col2 .item .prise .priseNum, #Journe .container .row .col2 .item .prise .priseNum, #Red .container .row .col2 .item .prise .priseNum {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#Faith .container .row .col2 .item .prise .priseNum span, #Solider .container .row .col2 .item .prise .priseNum span, #TopSecret .container .row .col2 .item .prise .priseNum span, #Cabin .container .row .col2 .item .prise .priseNum span, #RedHouse .container .row .col2 .item .prise .priseNum span, #Dark .container .row .col2 .item .prise .priseNum span, #Silence .container .row .col2 .item .prise .priseNum span, #Bounty .container .row .col2 .item .prise .priseNum span, #Warrior .container .row .col2 .item .prise .priseNum span, #Ruler .container .row .col2 .item .prise .priseNum span, #Hunter .container .row .col2 .item .prise .priseNum span, #Space .container .row .col2 .item .prise .priseNum span, #Terra .container .row .col2 .item .prise .priseNum span, #Journe .container .row .col2 .item .prise .priseNum span, #Red .container .row .col2 .item .prise .priseNum span {
+  font-size: 25px;
+}
+#Faith .container .row .col2 .item .butns button, #Solider .container .row .col2 .item .butns button, #TopSecret .container .row .col2 .item .butns button, #Cabin .container .row .col2 .item .butns button, #RedHouse .container .row .col2 .item .butns button, #Dark .container .row .col2 .item .butns button, #Silence .container .row .col2 .item .butns button, #Bounty .container .row .col2 .item .butns button, #Warrior .container .row .col2 .item .butns button, #Ruler .container .row .col2 .item .butns button, #Hunter .container .row .col2 .item .butns button, #Space .container .row .col2 .item .butns button, #Terra .container .row .col2 .item .butns button, #Journe .container .row .col2 .item .butns button, #Red .container .row .col2 .item .butns button {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  #Faith .container .row .col2 .item .butns button, #Solider .container .row .col2 .item .butns button, #TopSecret .container .row .col2 .item .butns button, #Cabin .container .row .col2 .item .butns button, #RedHouse .container .row .col2 .item .butns button, #Dark .container .row .col2 .item .butns button, #Silence .container .row .col2 .item .butns button, #Bounty .container .row .col2 .item .butns button, #Warrior .container .row .col2 .item .butns button, #Ruler .container .row .col2 .item .butns button, #Hunter .container .row .col2 .item .butns button, #Space .container .row .col2 .item .butns button, #Terra .container .row .col2 .item .butns button, #Journe .container .row .col2 .item .butns button, #Red .container .row .col2 .item .butns button {
+    padding: 10px 18px;
+  }
+}
+#Faith .container .row .col2 .item .butns button p, #Solider .container .row .col2 .item .butns button p, #TopSecret .container .row .col2 .item .butns button p, #Cabin .container .row .col2 .item .butns button p, #RedHouse .container .row .col2 .item .butns button p, #Dark .container .row .col2 .item .butns button p, #Silence .container .row .col2 .item .butns button p, #Bounty .container .row .col2 .item .butns button p, #Warrior .container .row .col2 .item .butns button p, #Ruler .container .row .col2 .item .butns button p, #Hunter .container .row .col2 .item .butns button p, #Space .container .row .col2 .item .butns button p, #Terra .container .row .col2 .item .butns button p, #Journe .container .row .col2 .item .butns button p, #Red .container .row .col2 .item .butns button p {
+  width: max-content;
+}
+#Faith .container .row .col2 .item .butns button img, #Solider .container .row .col2 .item .butns button img, #TopSecret .container .row .col2 .item .butns button img, #Cabin .container .row .col2 .item .butns button img, #RedHouse .container .row .col2 .item .butns button img, #Dark .container .row .col2 .item .butns button img, #Silence .container .row .col2 .item .butns button img, #Bounty .container .row .col2 .item .butns button img, #Warrior .container .row .col2 .item .butns button img, #Ruler .container .row .col2 .item .butns button img, #Hunter .container .row .col2 .item .butns button img, #Space .container .row .col2 .item .butns button img, #Terra .container .row .col2 .item .butns button img, #Journe .container .row .col2 .item .butns button img, #Red .container .row .col2 .item .butns button img {
+  width: 30px;
+}
+#Faith .container .row .col2 .item .dis p, #Solider .container .row .col2 .item .dis p, #TopSecret .container .row .col2 .item .dis p, #Cabin .container .row .col2 .item .dis p, #RedHouse .container .row .col2 .item .dis p, #Dark .container .row .col2 .item .dis p, #Silence .container .row .col2 .item .dis p, #Bounty .container .row .col2 .item .dis p, #Warrior .container .row .col2 .item .dis p, #Ruler .container .row .col2 .item .dis p, #Hunter .container .row .col2 .item .dis p, #Space .container .row .col2 .item .dis p, #Terra .container .row .col2 .item .dis p, #Journe .container .row .col2 .item .dis p, #Red .container .row .col2 .item .dis p {
+  color: white;
+}
+#Faith .container .slide, #Solider .container .slide, #TopSecret .container .slide, #Cabin .container .slide, #RedHouse .container .slide, #Dark .container .slide, #Silence .container .slide, #Bounty .container .slide, #Warrior .container .slide, #Ruler .container .slide, #Hunter .container .slide, #Space .container .slide, #Terra .container .slide, #Journe .container .slide, #Red .container .slide {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media (max-width: 1300px) {
+  #Faith .container .slide, #Solider .container .slide, #TopSecret .container .slide, #Cabin .container .slide, #RedHouse .container .slide, #Dark .container .slide, #Silence .container .slide, #Bounty .container .slide, #Warrior .container .slide, #Ruler .container .slide, #Hunter .container .slide, #Space .container .slide, #Terra .container .slide, #Journe .container .slide, #Red .container .slide {
+    overflow-x: auto !important;
+  }
+}
+#Faith .container .slide .slideTrack, #Solider .container .slide .slideTrack, #TopSecret .container .slide .slideTrack, #Cabin .container .slide .slideTrack, #RedHouse .container .slide .slideTrack, #Dark .container .slide .slideTrack, #Silence .container .slide .slideTrack, #Bounty .container .slide .slideTrack, #Warrior .container .slide .slideTrack, #Ruler .container .slide .slideTrack, #Hunter .container .slide .slideTrack, #Space .container .slide .slideTrack, #Terra .container .slide .slideTrack, #Journe .container .slide .slideTrack, #Red .container .slide .slideTrack {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100% !important;
+}
+#Faith .container .slide .slideTrack:hover, #Solider .container .slide .slideTrack:hover, #TopSecret .container .slide .slideTrack:hover, #Cabin .container .slide .slideTrack:hover, #RedHouse .container .slide .slideTrack:hover, #Dark .container .slide .slideTrack:hover, #Silence .container .slide .slideTrack:hover, #Bounty .container .slide .slideTrack:hover, #Warrior .container .slide .slideTrack:hover, #Ruler .container .slide .slideTrack:hover, #Hunter .container .slide .slideTrack:hover, #Space .container .slide .slideTrack:hover, #Terra .container .slide .slideTrack:hover, #Journe .container .slide .slideTrack:hover, #Red .container .slide .slideTrack:hover {
+  animation-play-state: paused;
+}
+#Faith .container .slide .slideTrack a, #Solider .container .slide .slideTrack a, #TopSecret .container .slide .slideTrack a, #Cabin .container .slide .slideTrack a, #RedHouse .container .slide .slideTrack a, #Dark .container .slide .slideTrack a, #Silence .container .slide .slideTrack a, #Bounty .container .slide .slideTrack a, #Warrior .container .slide .slideTrack a, #Ruler .container .slide .slideTrack a, #Hunter .container .slide .slideTrack a, #Space .container .slide .slideTrack a, #Terra .container .slide .slideTrack a, #Journe .container .slide .slideTrack a, #Red .container .slide .slideTrack a {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#Faith .container .slide .slideTrack a:not(:last-child), #Solider .container .slide .slideTrack a:not(:last-child), #TopSecret .container .slide .slideTrack a:not(:last-child), #Cabin .container .slide .slideTrack a:not(:last-child), #RedHouse .container .slide .slideTrack a:not(:last-child), #Dark .container .slide .slideTrack a:not(:last-child), #Silence .container .slide .slideTrack a:not(:last-child), #Bounty .container .slide .slideTrack a:not(:last-child), #Warrior .container .slide .slideTrack a:not(:last-child), #Ruler .container .slide .slideTrack a:not(:last-child), #Hunter .container .slide .slideTrack a:not(:last-child), #Space .container .slide .slideTrack a:not(:last-child), #Terra .container .slide .slideTrack a:not(:last-child), #Journe .container .slide .slideTrack a:not(:last-child), #Red .container .slide .slideTrack a:not(:last-child) {
+  margin-right: 20px;
+}
+#Faith .container .slide .slideTrack a:hover .shape, #Solider .container .slide .slideTrack a:hover .shape, #TopSecret .container .slide .slideTrack a:hover .shape, #Cabin .container .slide .slideTrack a:hover .shape, #RedHouse .container .slide .slideTrack a:hover .shape, #Dark .container .slide .slideTrack a:hover .shape, #Silence .container .slide .slideTrack a:hover .shape, #Bounty .container .slide .slideTrack a:hover .shape, #Warrior .container .slide .slideTrack a:hover .shape, #Ruler .container .slide .slideTrack a:hover .shape, #Hunter .container .slide .slideTrack a:hover .shape, #Space .container .slide .slideTrack a:hover .shape, #Terra .container .slide .slideTrack a:hover .shape, #Journe .container .slide .slideTrack a:hover .shape, #Red .container .slide .slideTrack a:hover .shape {
+  opacity: 1 !important;
+}
+#Faith .container .slide .slideTrack a .shape, #Solider .container .slide .slideTrack a .shape, #TopSecret .container .slide .slideTrack a .shape, #Cabin .container .slide .slideTrack a .shape, #RedHouse .container .slide .slideTrack a .shape, #Dark .container .slide .slideTrack a .shape, #Silence .container .slide .slideTrack a .shape, #Bounty .container .slide .slideTrack a .shape, #Warrior .container .slide .slideTrack a .shape, #Ruler .container .slide .slideTrack a .shape, #Hunter .container .slide .slideTrack a .shape, #Space .container .slide .slideTrack a .shape, #Terra .container .slide .slideTrack a .shape, #Journe .container .slide .slideTrack a .shape, #Red .container .slide .slideTrack a .shape {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.416);
+  opacity: 0;
+  transition: all 0.5s;
+}
+#Faith .container .slide .slideTrack a .shape img, #Solider .container .slide .slideTrack a .shape img, #TopSecret .container .slide .slideTrack a .shape img, #Cabin .container .slide .slideTrack a .shape img, #RedHouse .container .slide .slideTrack a .shape img, #Dark .container .slide .slideTrack a .shape img, #Silence .container .slide .slideTrack a .shape img, #Bounty .container .slide .slideTrack a .shape img, #Warrior .container .slide .slideTrack a .shape img, #Ruler .container .slide .slideTrack a .shape img, #Hunter .container .slide .slideTrack a .shape img, #Space .container .slide .slideTrack a .shape img, #Terra .container .slide .slideTrack a .shape img, #Journe .container .slide .slideTrack a .shape img, #Red .container .slide .slideTrack a .shape img {
+  width: 60px;
+  height: 60px;
+}
+#Faith .container .slide .slideTrack a img, #Solider .container .slide .slideTrack a img, #TopSecret .container .slide .slideTrack a img, #Cabin .container .slide .slideTrack a img, #RedHouse .container .slide .slideTrack a img, #Dark .container .slide .slideTrack a img, #Silence .container .slide .slideTrack a img, #Bounty .container .slide .slideTrack a img, #Warrior .container .slide .slideTrack a img, #Ruler .container .slide .slideTrack a img, #Hunter .container .slide .slideTrack a img, #Space .container .slide .slideTrack a img, #Terra .container .slide .slideTrack a img, #Journe .container .slide .slideTrack a img, #Red .container .slide .slideTrack a img {
+  width: 200px;
+  height: 319.14px;
+  border-radius: 15px;
+  user-select: none;
+}
+
+.pop-up-cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: initial;
+  left: initial;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+.pop-up-cart.show {
+  z-index: 100000;
+  opacity: 1;
+}
+.pop-up-cart.show .pop-up-box-cart {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+.pop-up-cart {
+  transition: all 1s;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.603);
+  overflow-y: auto;
+}
+.pop-up-cart::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+.pop-up-cart .pop-up-box-cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: initial;
+  left: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  width: 350px;
+  background-color: rgb(22, 22, 22);
+  background-image: url("../imgs/bg.png");
+  border-radius: 10px 0px 0px 10px;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+.pop-up-cart .pop-up-box-cart .logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: initial;
+  left: initial;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+.pop-up-cart .pop-up-box-cart .logout button {
+  background-color: transparent;
+  border: none;
+  width: 55px;
+}
+.pop-up-cart .pop-up-box-cart .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-cart .pop-up-box-cart .title .titleHead {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-cart .pop-up-box-cart .title .titleHead img {
+  margin-top: 0.5rem;
+  width: 35px;
+}
+.pop-up-cart .pop-up-box-cart .box .child {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 2px dashed #e4c590;
+  padding-bottom: 25px;
+}
+.pop-up-cart .pop-up-box-cart .box .child .imgCon {
+  border-radius: 15px;
+  width: 70px;
+  height: 107px;
+  overflow: hidden;
+  border: 2px solid #e4c590;
+  box-shadow: rgba(255, 221, 50, 0.35) 0px 1px 15px;
+}
+.pop-up-cart .pop-up-box-cart .box .child .itemInfo {
+  width: 105px;
+}
+.pop-up-cart .pop-up-box-cart .box .child .itemInfo .itemPrise p {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.pop-up-cart .pop-up-box-cart .box .child .itemDelet {
+  overflow: hidden;
+  width: 35px;
+  cursor: pointer;
+}
+.pop-up-cart .pop-up-box-cart .box .total {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pop-up-cart .pop-up-box-cart .box .butns {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-cart .pop-up-box-cart .box .butns button {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.pop-up-cart .pop-up-box-cart .box .butns button img {
+  width: 30px;
+}
+
+.searchPage {
+  overflow: auto;
+}
+.searchPage .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchPage .container .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchPage .container .searchBox {
+  width: 100%;
+  position: relative;
+}
+.searchPage .container .searchBox .inputData {
+  position: relative;
+}
+.searchPage .container .searchBox .inputData .imgSearch {
+  position: absolute;
+  top: initial;
+  right: 0;
+  bottom: 0;
+  left: initial;
+  width: 40px;
+}
+.searchPage .container .searchBox .inputData input {
+  width: 100%;
+  background-color: transparent;
+  outline: none !important;
+  border: 0;
+  border-bottom: 2px solid #e4c590;
+  padding: 10px;
+  color: white;
+}
+.searchPage .container .searchBox .inputData input:focus {
+  outline: none;
+}
+.searchPage .container .searchBox .inputData input::placeholder {
+  color: rgba(255, 255, 255, 0.728);
+}
+.searchPage .container .searchBox .resCon {
+  position: absolute;
+  width: 100%;
+  max-height: 200px;
+  overflow: auto;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.326);
+  border: 2px solid #e4c590;
+  border-top: 0;
+  padding: 10px;
+  border-radius: 0px 0px 15px 15px;
+}
+.searchPage .container .searchBox .resCon::-webkit-scrollbar {
+  width: 10px;
+  /* عرض الشريط */
+  height: 10px;
+  /* ارتفاع الشريط الأفقي */
+}
+.searchPage .container .searchBox .resCon::-webkit-scrollbar-track {
+  background: rgba(57, 57, 57, 0.3647058824);
+  /* خلفية المسار */
+  border-radius: 10px;
+}
+.searchPage .container .searchBox .resCon::-webkit-scrollbar-thumb {
+  background-color: #bca540;
+  /* لون المقبض */
+  border-radius: 10px;
+  /* انحناء المقبض */
+  border: 3px solid #1a1a1a;
+  /* مسافة بين المقبض والمسار */
+}
+.searchPage .container .searchBox .resCon::-webkit-scrollbar-thumb:hover {
+  background-color: #ffaa00;
+  /* لون عند التحويم */
+}
+.searchPage .container .searchBox .resCon * {
+  scrollbar-width: thin;
+  /* حجم الشريط */
+  scrollbar-color: #ffdd32 #1a1a1a;
+  /* thumb color, track color */
+}
+.searchPage .container .searchBox .resCon #results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchPage .container .searchBox .resCon #results a {
+  width: 100%;
+  text-align: center;
+  color: white;
+  transition: all 0.5s;
+}
+.searchPage .container .searchBox .resCon #results a:not(:last-child) {
+  margin-bottom: 15px;
+}
+.searchPage .container .searchBox .resCon #results a:hover {
+  background: black;
+  border-radius: 10px;
+}
+
+.contact .container .box {
+  background-image: url("../imgs/bg.png");
+  background-color: black;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact .container .box .formCon form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .container .box .formCon form input, .contact .container .box .formCon form textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #e4c590;
+  color: white;
+  padding: 5px;
+  resize: none;
+}
+.contact .container .box .formCon form input::placeholder, .contact .container .box .formCon form textarea::placeholder {
+  color: white;
+}
+.contact .container .box .formCon form input:focus, .contact .container .box .formCon form textarea:focus {
+  outline: none;
+}
+.contact .container .box .formCon form .infoCon {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon {
+    width: 90% !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon {
+    flex-direction: initial !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon {
+    width: initial !important;
+  }
+}
+.contact .container .box .formCon form .infoCon .nameCon {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon .nameCon {
+    width: 100% !important;
+  }
+  .contact .container .box .formCon form .infoCon .nameCon:first-child {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon .nameCon {
+    width: 50% !important;
+  }
+  .contact .container .box .formCon form .infoCon .nameCon:first-child {
+    margin-bottom: 0;
+  }
+}
+.contact .container .box .formCon form .infoCon .nameCon {
+  width: 50%;
+}
+@media (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon .nameCon input {
+    width: 100% !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon .nameCon input {
+    width: 80% !important;
+  }
+}
+.contact .container .box .formCon form .infoCon .nameCon input {
+  width: 80%;
+}
+.contact .container .box .formCon form .emailCon {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+.contact .container .box .formCon form .emailCon input {
+  width: 100%;
+}
+.contact .container .box .formCon form .textMessage {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+.contact .container .box .formCon form .textMessage input {
+  width: 100%;
+}
+.contact .container .box .formCon form .textMessage textarea {
+  width: 100%;
+}
+.contact .container .box .formCon form .butns {
+  width: 60%;
+  margin-right: 0 !important;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+.contact .container .box .formCon form .butns a {
+  width: 100%;
+}
+.contact .container .box .formCon form .butns a button {
+  width: 100%;
+}
+
+#Home .boxLogin {
+  padding: 20px;
+}
+#Home .boxLogin .emailCon, #Home .boxLogin .nameCon {
+  position: relative;
+}
+#Home .boxLogin .emailCon img, #Home .boxLogin .nameCon img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+}
+#Home .boxLogin .emailCon img.pass, #Home .boxLogin .nameCon img.pass {
+  cursor: pointer;
+}
+#Home .boxLogin .toReg {
+  margin-bottom: 1rem;
+}
+#Home .boxLogin .toReg a h5 {
+  font-size: 17px;
+}
+
+.nameCon {
+  position: relative;
+}
+.nameCon img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+}
+@media (max-width: 1300px) {
+  .nameCon img {
+    display: initial !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .nameCon img {
+    display: none !important;
+  }
+}
+.nameCon img {
+  display: none;
+}
+
+.emailCon {
+  position: relative;
+}
+.emailCon img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.cs.map */

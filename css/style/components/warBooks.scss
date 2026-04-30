@@ -1,0 +1,42 @@
+@use "../abstracts/" as *;
+#War{
+    .container{
+        .row{
+            .column{
+                height: 520px!important;
+                width: fit-content!important;
+            }
+        }
+    }
+    .box{
+        width: fit-content!important;
+    }
+    .box1{
+        @include bgImg();
+        background-image: url("../imgs/war/Black\ White\ Simple\ Real\ Soldier\ Wattpad\ Book\ Cover.png")!important;
+    }
+    .box2{
+        @include bgImg();
+        background-image: url("../imgs/war/Brown\ Bold\ Action\ Movie\ Flyer.png")!important;
+    }
+    .box3{
+        @include bgImg();
+        background-image: url("../imgs/war/Brown\ Rusty\ Mystery\ Novel\ Book\ Cover\ .png")!important;
+    }
+    .box4{
+        @include bgImg();
+        background-image: url("../imgs/war/Green\ &\ Red\ Simple\ Mystery\ Thriller\ Story\ Book\ Cover.png")!important;
+    }
+    .bodyText{
+        @include flexCenter(column);
+        align-items: flex-start!important;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.445)!important;
+        p{
+            color: white;
+        }
+        span.priseUnit{
+            color: $color1;
+        }
+    }
+}

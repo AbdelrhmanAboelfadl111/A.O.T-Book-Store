@@ -1,0 +1,50 @@
+@use "../abstracts/" as *;
+nav{
+    padding: 5px 40px;
+    opacity: 1!important;
+    z-index: 10000;
+    @include responsive(350) {
+        padding: 5px 5px;
+    }
+    @include responsive(1050) {
+        padding: 5px 20px;
+    }
+    @include flexCenter();
+    @include Position($type: fixed, $t: 0, $l: 0);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    background: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    justify-content: space-between;
+    transition: all 1s!important;
+    .navLogo {
+        a{
+            @include flexCenter();
+            img {
+                width: 60px;
+            }       
+            h2 {
+                color: white;
+                font-size: 25px;
+                font-weight: 400;
+                @include responsive(350) {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .navBtn{
+        @include flexCenter();
+        gap: 10px;
+        img{
+            width: 40px;
+            cursor: pointer;
+            @include responsive(350) {
+                width: 35px;
+            }
+        }
+    }
+}
+nav.noShow{
+   transform: translateY(-100%);
+}

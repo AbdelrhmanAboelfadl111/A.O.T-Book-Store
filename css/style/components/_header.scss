@@ -1,0 +1,157 @@
+@use "../abstracts/" as *;
+#Home{
+    &.active{
+        .col1,.col2{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @include flexCenter();
+    position: relative;
+    background-image: url("../imgs/ChatGPT\ Image\ Oct\ 13\,\ 2025\,\ 12_25_21\ AM.png");
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    &::before{
+        @include shapeNav($w: 100%, $h: 100%, $color: rgba(0, 0, 0, 0.4), $opacity: 1, $border-color: transparent);
+        @include Position($type: absolute, $t: 0, $l: 0);
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.363);
+    }
+    .title{
+        .titleHead{
+            h2{
+                margin-top: 10px;
+                font-size: 40px;
+                @include responsive(350){
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .col1{
+        transform: translateY(30px);
+        opacity: 0;
+        transition: all 0.8s;
+    }
+    .col2{
+        transform: translateY(30px);
+        opacity: 0;
+        transition: all 0.8s;
+        @include responsive(350){
+            display: none;
+        }
+        @include responsive(850) {
+            display: initial;
+        }
+        .box{
+            align-items:center;
+            position: relative;
+            .shapes{
+                @include flexCenter();
+                justify-content: space-between;
+                img{
+                    transform: translateY(-50px);
+                    width: 50px;
+                    @include responsive(350){
+                        width: 30px;
+                    }
+                    animation: animiopacity 1s infinite alternate ease-in-out;
+                    &.shape1{
+                        transform: translate(-120px,150px);
+                        animation-delay: 0s;
+                        @include responsive(850) {
+                            transform: translate(-100px, 150px);
+                        }
+                    }
+                    &.shape2{
+                        transform: translateY(-30px);
+                        animation-delay: 0.3s;
+                    }
+                    &.shape3{
+                        transform: translate(120px,150px);
+                        @include responsive(850) {
+                            transform: translate(100px, 150px);
+                        }
+                        animation-delay: 0.6s;
+                    }
+                }
+            }
+            img.mainImg{
+                width: 250px;
+                @include responsive(850) {
+                    width: 200px;
+                }
+                animation: animiTranslate 2s infinite alternate linear;
+            }
+        }
+    }
+    .box{
+        @include flexCenter(column);
+        align-items: flex-start;
+        .textCon{
+            color: white;
+            p{
+                color: rgb(199, 199, 199);
+                @include responsive(850) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .members{
+        @include Position($type: absolute, $r: 0px, $b: 20px);
+        cursor: pointer;
+        border: 2px solid #e4c590;
+        border-radius: 10px 0px 0px 10px;
+        border-right: 0px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transform: translateX(190px);
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.603);
+        transition: all 0.6s;
+        @include responsive(350) {
+            transform: translateX(147px);
+        }
+        @include responsive(450) {
+            transform: translateX(155px);
+        }
+        @include responsive(650) {
+            transform: translateX(165px);
+        }
+        @include responsive(850) {
+            transform: translateX(175px);
+        }
+        &:hover{
+            transform: translateX(0)
+        }
+        .box{
+            @include flexCenter();
+            padding: 5px 10px;
+            img{
+                width: 50px;
+                margin-bottom: 10px;
+            }
+            h2{
+                margin: 0;
+                color: white;
+            }
+            
+        }
+    }
+    .butns{
+        @include flexCenter();
+        button{
+            @include flexCenter();
+            @include responsive(350){
+                padding: 10px 18px;
+            }
+            p{
+                width: max-content;
+            }
+            img{
+                width: 30px;
+            }
+        }
+    }
+}

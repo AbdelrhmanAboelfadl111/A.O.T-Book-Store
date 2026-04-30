@@ -1,0 +1,26 @@
+@use "../abstracts/" as *;
+#Home{
+    .boxLogin{
+        padding: 20px;
+        .emailCon,.nameCon{
+            position: relative;
+            img{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 30px;
+                &.pass{
+                    cursor: pointer;
+                }
+            }
+        }
+        .toReg{
+            margin-bottom: 1rem;
+            a{
+                h5{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

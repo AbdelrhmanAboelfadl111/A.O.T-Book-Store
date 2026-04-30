@@ -1,0 +1,103 @@
+@use "../abstracts/" as *;
+.contact{
+    .container{
+        .box{
+            background-image: url("../imgs/bg.png");
+            background-color: black;
+            padding: 20px 10px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            .formCon{
+                form{
+                    @include flexCenter(column);
+                    input,textarea{
+                        background: transparent;
+                        border: 0;
+                        border-bottom: 2px solid $color1;
+                        color: white;
+                        padding: 5px;
+                        resize: none;
+                        &::placeholder{
+                            color: white;
+                        }
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    .infoCon{
+                        @include flexCenter();
+                        @include responsive(350) {
+                            flex-direction: column!important
+                        }
+                        @include responsive(350) {
+                            width: 90% !important;
+                        }
+
+                        @include responsive(650) {
+                            flex-direction: initial!important
+                        }
+                        @include responsive(650) {
+                            width: initial !important;
+                        }
+                        
+                        .nameCon{
+                            @include flexCenter();
+                            @include responsive(350){
+                                width: 100%!important;
+                                &:first-child{
+                                    margin-bottom: 1.5rem;
+                                }
+                            }
+                            @include responsive(650){
+                                width: 50%!important;
+                                &:first-child{
+                                    margin-bottom: 0;
+                                }
+                            }
+                            width: 50%;
+                            input{
+                                @include responsive(350) {
+                                    width: 100% !important;
+                                }
+                                @include responsive(650) {
+                                    width: 80% !important;
+                                }
+                                width: 80%;
+                            }
+                        }
+                    }
+                    .emailCon{
+                        width: 90%;
+                        margin: auto;
+                        @include flexCenter();
+                        input{
+                            width: 100%;
+                        }
+                    }
+                    .textMessage{
+                        width: 90%;
+                        margin: auto;
+                        @include flexCenter();
+                        input {
+                            width: 100%;
+                        }
+                        textarea{
+                            width: 100%;
+                        }
+                    }
+                    .butns{
+                        width: 60%;
+                        margin-right: 0!important;
+                        @include flexCenter();
+                        a{
+                            width: 100%;
+                            button{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

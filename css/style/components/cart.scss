@@ -1,0 +1,100 @@
+@use "../abstracts/" as *;
+.pop-up-cart{
+    @include Position($type: fixed, $t: 0, $r: 0);
+    @include size($w:100%,$h:100%);
+    z-index: -1;
+    opacity: 0;
+    &.show{
+        z-index: 100000;
+        opacity: 1;
+        .pop-up-box-cart{
+            transform: translateY(0)!important;
+            opacity: 1!important;
+        }
+    }
+    transition: all 1s;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.603);
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari, Opera */
+    }
+    .pop-up-box-cart{
+        @include Position($type: absolute, $t: 0, $r: 0);
+        @include flexCenter(column);
+        justify-content: flex-start;
+        width: 350px;
+        background-color: rgb(22, 22, 22);
+        background-image: url("../imgs/bg.png");
+        border-radius: 10px 0px 0px 10px;
+        transform: translateY(-100%);
+        transition: all 1s;
+        .logout{
+            @include Position($type: absolute, $t: 10px, $r: 10px);
+            @include flexCenter();
+            justify-content: flex-end;
+            button{
+                background-color: transparent;
+                border: none;
+                width: 55px;
+            }
+        }
+        .title{
+            @include flexCenter(column);
+            .titleHead{
+                @include flexCenter();
+                img{
+                    margin-top: 0.5rem;
+                    width: 35px;
+                }
+            }
+        }
+        .box{
+            .child{
+                @include flexCenter();
+                justify-content: space-evenly;
+                border-bottom: 2px dashed $color1;
+                padding-bottom: 25px;
+                .imgCon{
+                    border-radius: 15px;
+                    width: 70px;
+                    height: 107px;
+                    overflow: hidden;
+                    border: 2px solid $color1;
+                    box-shadow: rgba(255, 221, 50, 0.35) 0px 1px 15px;
+                }
+                .itemInfo{
+                    width: 105px;
+                    .itemPrise{
+                        p{
+                            @include flexCenter();
+                            justify-content: flex-start;
+                            flex-wrap: nowrap;
+                        }
+                    }
+                }
+                .itemDelet{
+                    overflow: hidden;
+                    width: 35px;
+                    cursor: pointer;
+                }
+            }
+            .total{
+                @include flexCenter();
+                justify-content: flex-start;
+            }
+            .butns{
+                @include flexCenter();
+                button{
+                    @include flexCenter();
+                    flex-wrap: nowrap;
+                    img{
+                        width: 30px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

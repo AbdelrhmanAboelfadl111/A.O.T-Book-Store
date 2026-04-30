@@ -1,0 +1,95 @@
+@use "../abstracts/" as *;
+#BooksCat,#War,#Horror,#History,#Since{
+    &.active{
+        .column{
+            transform: translateY(0)!important;
+            opacity: 1!important;
+        }
+    }
+    background-image: url("../imgs/bg.png");
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    @include flexCenter();
+    background-attachment: fixed;
+    .container{
+        .title {
+            @include flexCenter(column);
+    
+            .titleHead {
+                @include flexCenter();
+                color: white;
+            }
+        }
+        .row{
+            .column{
+                width: 300px;
+                height: 350px;
+                padding: 20px;
+                margin: auto;
+                transform: translateY(30px);
+                opacity: 0;
+                transition: all 1s;
+                @include flexCenter();
+                .item{
+                    @include size($w: 100%, $h: 100%);
+                    .box{
+                        width: fit-content;
+                        &:hover{
+                            .shape{
+                                opacity: 1!important;
+                            }
+                            .bodyText{
+                                padding-block: 20px;
+                            }
+                        }
+                        &.box2{
+                            background-image: url("../imgs/catBooks/war-zone-landscape-with-apocalyptic-destruction.jpg");
+                        }
+                        &.box3{
+                            background-image: url("../imgs/catBooks/egyptian-hieroglyphs-wall.jpg");
+                        }
+                        &.box4{
+                            background-image: url("../imgs/catBooks/3704171.jpg");
+                        }
+                        position: relative;
+                        @include size($w: 100%, $h: 100%);
+                        cursor: pointer;
+                        @include bgImg();
+                        background-image: url("../imgs/catBooks/halloween-wallpaper-with-zombie-hand.jpg");
+                        overflow: hidden;
+                        border-radius: 15px;
+                        &::before{
+                            content: "";
+                            display: block;
+                            background: linear-gradient(0deg, #000000e4 10%, transparent 100%);
+                            @include size($w:100%,$h:100%);
+                            @include Position($type: absolute, $b: 0, $l: 0);
+                        }
+                        .shape{
+                            backdrop-filter: blur(2px);
+                            background: rgba(0, 0, 0, 0.326);
+                            opacity: 0;
+                            transition: all 0.5s;
+                            @include flexCenter();
+                            @include Position($type: absolute, $b: 0, $l: 0);
+                            img{
+                                width: 70px;
+                            }
+                        }
+                        .bodyText{
+                            @include flexCenter(column);
+                            @include Position($type: absolute, $b: 0px, $l: 0);
+                            background-color: black;
+                            transition: all 0.5s!important;
+                            padding: 10px;
+                            h2{
+                                text-transform: uppercase;
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

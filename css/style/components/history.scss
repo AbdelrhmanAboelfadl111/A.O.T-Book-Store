@@ -1,0 +1,46 @@
+@use "../abstracts/" as *;
+#History {
+    .container {
+        .row {
+            .column {
+                height: 520px !important;
+                width: 350px !important;
+            }
+        }
+    }
+
+    .box1 {
+        @include bgImg();
+        background-image: url("../imgs/history/Beige\ and\ Brown\ Rusty\ Vintage\ Style\ Mystery\ Novel\ Book\ Cover\ .png") !important;
+    }
+
+    .box2 {
+        @include bgImg();
+        background-image: url("../imgs/history/Brown\ And\ Black\ Rusty\ Mystery\ Novel\ Book\ Cover.png") !important;
+    }
+
+    .box3 {
+        @include bgImg();
+        background-image: url("../imgs/history/Brown\ Rusty\ Mystery\ Novel\ Book\ Cover.png") !important;
+    }
+
+    .box4 {
+        @include bgImg();
+        background-image: url("../imgs/history/Brown\ Vintage\ Style\ Mystery\ Novel\ Book\ Cover.png") !important;
+    }
+
+    .bodyText {
+        @include flexCenter(column);
+        align-items: flex-start !important;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.445) !important;
+
+        p {
+            color: white;
+        }
+
+        span.priseUnit {
+            color: $color1;
+        }
+    }
+}
